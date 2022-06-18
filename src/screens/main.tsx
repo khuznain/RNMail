@@ -1,18 +1,11 @@
-import { View, Text } from 'react-native'
 import React from 'react'
+import { Box, Text } from '@/atoms'
 
 const MainScreen = () => {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: 'red'
-      }}
-    >
+    <Box>
       <Text>Khalid</Text>
-    </View>
+    </Box>
   )
 }
 
