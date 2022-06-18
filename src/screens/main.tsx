@@ -1,11 +1,12 @@
 import React from 'react'
-import { Box, Text } from '@/atoms'
+import { Container } from '@/atoms'
+import NoteList from '@/components/note-list'
 
 const MainScreen = () => {
   return (
-    <Box>
-      <Text>Khalid</Text>
-    </Box>
+    <Container>
+      <NoteList />
+    </Container>
   )
 }
 
