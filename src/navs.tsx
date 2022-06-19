@@ -35,7 +35,7 @@ function Home() {
   )
 }
 
-export default function Navigations() {
+export default function Navigation() {
   return (
     <Stack.Navigator initialRouteName="Home">
       <Stack.Screen
