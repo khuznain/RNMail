@@ -1,16 +1,18 @@
 import React from 'react'
+import { useAtom } from 'jotai'
 import { NavigationContainer } from '@react-navigation/native'
-import Navigation from './navs'
 import { ThemeProvider } from '@shopify/restyle'
-import light from './themes/light'
-import StatusBar from './components/status-bar'
+import StatusBar from '@/components/status-bar'
+import { activeThemeAtom } from './states/theme'
+import Navigations from './navs'
 
 const App = () => {
+  const [activeTheme] = useAtom(activeThemeAtom)
   return (
     <NavigationContainer>
-      <ThemeProvider theme={light}>
+      <ThemeProvider theme={activeTheme}>
         <StatusBar />
-        <Navigation />
+        <Navigations />
       </ThemeProvider>
     </NavigationContainer>
   )

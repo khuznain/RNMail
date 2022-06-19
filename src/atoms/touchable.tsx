@@ -33,13 +33,13 @@ const restyleFunctions = composeRestyleFunctions<Theme, RestyleProps>([
 interface Props extends PressableProps {
   pressed?: RestyleProps
   rippleColor?: ResponsiveValue<keyof Theme['colors'], Theme>
-  rippleBorderless?: boolean
+  rippleBorderLess?: boolean
 }
 
 const Touchable = ({
   pressed,
   rippleColor,
-  rippleBorderless,
+  rippleBorderLess,
   style,
   ...rest
 }: Props) => {
@@ -53,7 +53,7 @@ const Touchable = ({
   return (
     <Pressable
       {...rest}
-      android_ripple={{ color: rippleColorValue, borderless: rippleBorderless }}
+      android_ripple={{ color: rippleColorValue, borderless: rippleBorderLess }}
       // @ts-ignore
       style={({ pressed: isPressed }) =>
         isPressed ? [style, pressedStyle] : style
