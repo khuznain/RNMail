@@ -74,7 +74,7 @@ export default function MainScreen({ navigation }: Props) {
         <TouchableOpacity
           m="xs"
           p="xs"
-          rippleBorderless
+          rippleBorderLess
           onPress={handleSidebarToggle}
         >
           <FeatherIcon name="menu" size={22} />
@@ -85,7 +85,7 @@ export default function MainScreen({ navigation }: Props) {
         <TouchableOpacity
           m="xs"
           p="xs"
-          rippleBorderless
+          rippleBorderLess
           onPress={handleMenuToggle}
         >
           <FeatherIcon name="more-vertical" size={22} />

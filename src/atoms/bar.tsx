@@ -4,6 +4,7 @@ import {
   createVariant,
   VariantProps
 } from '@shopify/restyle'
+//
 import Box, { BoxProps } from './box'
 
 const Bar = createRestyleComponent<
